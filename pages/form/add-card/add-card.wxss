@@ -1,0 +1,52 @@
+.page {
+  background-color: #F8F7F4;
+  position: relative;
+}
+
+.cell-list-wrap {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.cell {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  height: 90rpx;
+  color: #666;
+  background-color: #fff;
+  text-align: left;
+}
+
+.cell>view,
+.cell>view>view {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.cell .icon {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 43rpx;
+  width: 46rpx;
+  text-align: center;
+  padding-left: 24rpx;
+}
+
+.arrow.icon {
+  width: 6rpx;
+}
+
+.arrow::after {
+  right: 6rpx;
+  margin-top: -8.7rpx;
+}
+

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "tiny-button": "/components/tiny-button/tiny-button",
+    "tiny-input": "/components/tiny-input/tiny-input"
+  },
+  "backgroundColor": "#F8F7F4"
+}

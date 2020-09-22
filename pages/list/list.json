@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单",
+  "usingComponents": {
+    "search-bar": "/components/search-bar/search-bar"
+  },
+  "enablePullDownRefresh": true
+}

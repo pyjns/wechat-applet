@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "tiny-button": "/components/tiny-button/tiny-button"
+  }
+}

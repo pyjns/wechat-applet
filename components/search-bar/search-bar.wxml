@@ -1,0 +1,16 @@
+<view class="search">
+  <picker data-arrow="typeArrow" bindtap="tapPicker" bindcancel="cancelPicker" bindchange="changePicker" data-key="type"
+    value="{{type}}" range="{{typeList}}" range-key="name">
+    <view class="picker">
+      <text class="{{typeArrow?'up-arrow':''}}">{{type>0?typeList[type].name:"消费分类"}}</text>
+    </view>
+  </picker>
+
+  <picker data-arrow="statusArrow" bindtap="tapPicker" bindcancel="cancelPicker" bindchange="changePicker"
+    data-key="status" value="{{status}}" range="{{statusList}}" range-key="name">
+    <view class="picker">
+      <text class="{{statusArrow?'up-arrow':''}}">{{status>0?statusList[status].name:'订单状态'}}</text>
+    </view>
+  </picker>
+
+</view>

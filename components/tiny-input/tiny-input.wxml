@@ -1,0 +1,9 @@
+<view class="cell split {{inputFocus?'focus':''}}">
+  <view class="label">{{label}}</view>
+  <view class="wrap-input">
+    <input class="input" bindinput="onInput" bindfocus="focusInput" bindblur="blurInput" focus="{{inputFocus}}"
+      value="{{inputValue}}" maxlength="{{maxlength}}" placeholder="{{placeholder}}" placeholder-class="placeholder"
+      password="{{type == 'pwd'?showPwd:false}}"></input>
+    <icon hidden="{{!inputValue || !inputFocus}}" bindtap="clearInput" type="clear" size="22" />
+  </view>
+</view>

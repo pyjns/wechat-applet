@@ -1,0 +1,56 @@
+.cell {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 90rpx;
+  color: #666;
+  background-color: #fff;
+}
+
+.label {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.wrap-input {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.placeholder {
+  color: #bebebe;
+  font-size: 28rpx;
+}
+
+.focus {
+  border-color: #f86e21 !important;
+}
+
+.icon-clear {
+  padding: 22rpx 12rpx;
+}
+
+.split {
+  position: relative;
+}
+
+.split::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1rpx;
+  transform: scaleY(0.5);
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  background-color: #eee;
+  z-index: 1;
+}

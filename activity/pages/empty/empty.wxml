@@ -1,0 +1,6 @@
+<view class="page">
+  <view>分包页面</view>
+  <view>{{options}}</view>
+
+  <navigator url="/pages/index/index" hover-class="none">回到主包</navigator>
+</view>

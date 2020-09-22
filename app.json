@@ -1,0 +1,50 @@
+{
+  "debug": true,
+  "pages": [
+    "pages/loading/loading",
+    "pages/list/list",
+    "pages/index/index",
+    "pages/form/idcard/idcard",
+    "pages/form/camera/camera",
+    "pages/form/add-card/add-card",
+    "pages/web-view/example/example"
+  ],
+  "subpackages": [
+    {
+      "root": "activity",
+      "pages": [
+        "pages/empty/empty"
+      ]
+    }
+  ],
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/pages/assets/icon/tabbar.jpg"
+      },
+      {
+        "pagePath": "pages/form/add-card/add-card",
+        "text": "表单",
+        "iconPath": "/pages/assets/icon/tabbar.jpg"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "列表",
+        "iconPath": "/pages/assets/icon/tabbar.jpg"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

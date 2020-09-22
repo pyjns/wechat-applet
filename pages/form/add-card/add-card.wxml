@@ -1,0 +1,21 @@
+<view class="page">
+
+	<tiny-input data-field="phone" bindupdate="updateInput" maxlength="11" label="手机号" input-value="{{phone}}"
+		placeholder="请填写手机号"></tiny-input>
+
+	<tiny-input data-field="name" bindupdate="updateInput" maxlength="11" label="姓名" input-value="{{name}}"
+		placeholder="请填写姓名"></tiny-input>
+
+		<tiny-input data-field="card" bindupdate="updateInput" maxlength="11" label="卡号" input-value="{{card}}"
+		placeholder="请填写卡号"></tiny-input>
+
+
+	<!-- <navigator url="{{'/pages/form/camera/camera?type=1&merchantId='+ merchantId}}&source=add" hover-class="none">上传身份证
+	</navigator>
+
+	<navigator url="/pages/form/camera/camera?type=0&source=add" hover-class="none">识别银行卡</navigator> -->
+
+
+	<tiny-button loading="{{loading}}" bindsubmit="submit"></tiny-button>
+
+</view>

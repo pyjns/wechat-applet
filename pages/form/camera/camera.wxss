@@ -1,0 +1,95 @@
+.page {}
+
+camera {
+  position: relative;
+  width: 550rpx;
+  height: 850rpx;
+}
+
+camera cover-view {
+  position: relative;
+  width: 550rpx;
+  height: 850rpx;
+}
+
+.wrap {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.frame-wrap {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1A1A1A;
+
+}
+
+.frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 550rpx;
+  height: 850rpx;
+  border-radius: 24rpx;
+  border: 6rpx solid rgba(255, 255, 255, 0.6);
+  z-index: 2;
+}
+
+.frame-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 550rpx;
+  height: 850rpx;
+  z-index: 1;
+}
+
+cover-image.frame {
+  border: none;
+}
+
+.operate-wrap {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 288rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.flash {
+  width: 82rpx;
+  height: 82rpx;
+}
+
+.return {
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.take-photo {
+  width: 160rpx;
+  height: 160rpx;
+  background-color: #FDE4BA;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.take-photo view {
+  width: 110rpx;
+  height: 110rpx;
+  background-color: #FCA61B;
+  border-radius: 50%;
+}

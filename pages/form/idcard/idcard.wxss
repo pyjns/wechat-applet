@@ -1,0 +1,98 @@
+.page {
+  background-color: #fff;
+  padding: 8rpx 32rpx 0;
+}
+
+button::after {
+  border: none;
+}
+
+.wrap+.wrap {
+  margin-top: 20rpx;
+}
+
+.wrap {
+  position: relative;
+  height: 468rpx;
+}
+
+.title {
+  height: 73rpx;
+  line-height: 73rpx;
+  background: rgba(244, 242, 239, 1);
+  font-size: 32rpx;
+  color: rgba(197, 188, 176, 1);
+  text-align: center;
+}
+
+.card-wrap {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 399rpx;
+  border: 1rpx dashed rgba(241, 230, 215, 1);
+  border-top: none;
+  border-bottom-left-radius: 12rpx;
+  border-bottom-right-radius: 12rpx;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.front,
+.back {
+  width: 440rpx;
+  height: 289rpx;
+  z-index: 1;
+  bottom: 55rpx;
+  overflow: hidden;
+}
+
+.camera {
+  width: 112rpx;
+  height: 112rpx;
+  bottom: 144rpx;
+  z-index: 5;
+}
+
+.idcard {
+  z-index: 15;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20rpx;
+  width: 289rpx;
+  height: 440rpx;
+  margin: auto;
+  transform: rotate(-90deg);
+}
+
+.close {
+  z-index: 20;
+  position: absolute;
+  right: 100rpx;
+  top: 24rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.demo-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 28rpx 0 264rpx;
+  text-align: center;
+}
+
+.demo-wrap image {
+  width: 156rpx;
+  height: 116rpx;
+}
+
+.demo-wrap text {
+  font-size: 26rpx;
+  color: rgba(164, 157, 149, 1);
+}

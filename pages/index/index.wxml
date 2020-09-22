@@ -1,0 +1,27 @@
+<view class="page">
+
+	<view class="swiper-wrap" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"
+		bindtouchcancel="touchEnd">
+		<view class="user-list-wrap"
+			style="width:{{ulWith}}px;transition-duration:{{transitionDuration}};transform:{{translateX}}">
+
+			<view wx:for="{{list}}" wx:key="*this" class="user-wrap"
+				style="transform:{{index===swiperCurrent?currentScale:(index === stepNext || index === stepPrevious)?nextScale:'scaleY(0.8)'}};transition-duration:{{transitionDuration}}">
+				{{item}}</view>
+		</view>
+	</view>
+
+	<view class="cell-list-wrap">
+		<view class="space"></view>
+		<navigator url="/pages/list/list" class="arrow" hover-class="none">
+			<text class="skeleton-rect">列表</text>
+			<text class="warn">new</text>
+		</navigator>
+		<view class="hair-line"></view>
+		<navigator url="/pages/form/add-card/add-card" class="arrow" hover-class="none">
+			<text class="skeleton-rect">表单</text>
+			<text class="warn">new</text>
+		</navigator>
+		<view class="hiar-line"></view>
+	</view>
+</view>

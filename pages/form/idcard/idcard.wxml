@@ -1,0 +1,51 @@
+<view class="page">
+
+	<view class="wrap">
+		<view class="title">请拍摄身份证人像面</view>
+		<view class="card-wrap">
+			<image class="icon front" mode="widthFix" src="/pages/assets/card/front.png"></image>
+			<navigator url="/pages/card/open-account/camera/camera?type=1&source={{source}}" hover-class="none">
+				<image class="icon camera" mode="widthFix" src="/pages/assets/icon/camera.png"></image>
+			</navigator>
+			<view hidden="{{!frontUrl}}" class="card">
+				<image class="idcard" mode="aspectFill" src="{{frontUrl}}"></image>
+				<image bindtap="clearPhoto" data-filed="frontUrl" class="close" mode="widthFix" src="/pages/assets/icon/close.png"></image>
+			</view>
+		</view>
+	</view>
+
+	<view class="wrap">
+		<view class="title">请拍摄身份证国徽面</view>
+		<view class="card-wrap">
+			<image class="icon front" mode="widthFix" src="/pages/assets/card/back.png"></image>
+			<navigator url="/pages/card/open-account/camera/camera?type=2&source={{source}}" hover-class="none">
+				<image class="icon camera" mode="widthFix" src="/pages/assets/icon/camera.png"></image>
+			</navigator>
+			<view hidden="{{!backUrl}}" class="card">
+				<image class="idcard" mode="aspectFill" src="{{backUrl}}"></image>
+				<image bindtap="clearPhoto" data-filed="backUrl" class="close" mode="widthFix" src="/pages/assets/icon/close.png"></image>
+			</view>
+		</view>
+	</view>
+
+	<view class="demo-wrap">
+		<view class="demo">
+			<image mode="widthFix" src="/pages/assets/card/demo1.png"></image>
+			<text>标准</text>
+		</view>
+		<view class="demo">
+			<image mode="widthFix" src="/pages/assets/card/demo2.png"></image>
+			<text>边框缺失</text>
+		</view>
+		<view class="demo">
+			<image mode="widthFix" src="/pages/assets/card/demo3.png"></image>
+			<text>照片模糊</text>
+		</view>
+		<view class="demo">
+			<image mode="widthFix" src="/pages/assets/card/demo4.png"></image>
+			<text>闪光强烈</text>
+		</view>
+	</view>
+
+	<tiny-button loading="{{loading}}" bindsubmit="submit"></tiny-button>
+</view>

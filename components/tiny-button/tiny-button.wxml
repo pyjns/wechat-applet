@@ -1,0 +1,4 @@
+<button class="btn" hover-class="btn-hover" bindtap="submit">
+  <view class="btn-loading" wx:if="{{loading}}"></view>
+  <text>{{btnText}}</text>
+</button>

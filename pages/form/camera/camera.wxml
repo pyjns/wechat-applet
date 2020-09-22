@@ -1,0 +1,24 @@
+<view class="page">
+	<view class="wrap">
+		<view class="frame-wrap">
+			<camera device-position="back" flash="{{flash}}" binderror="error" resolution="low">
+				<cover-view>
+					<cover-image class="frame-cover" mode="widthFix" src="/pages/assets/card/frame-cover.png"></cover-image>
+					<cover-image wx:if="{{typeEnum[type] == 'bankCard'}}" class="frame" mode="widthFix" src="/pages/assets/card/frame-bank.png"></cover-image>
+					<cover-image wx:elif="{{typeEnum[type] == 'idcardFront'}}" class="frame" mode="widthFix" src="/pages/assets/card/frame-front.png"></cover-image>
+					<cover-image wx:else class="frame" mode="widthFix" src="/pages/assets/card/frame-back.png"></cover-image>
+				</cover-view>
+			</camera>
+		</view>
+		<view class="operate-wrap">
+			<navigator open-type="navigateBack">
+				<image class="return" mode="widthFix" src="/pages/assets/icon/return.png"></image>
+			</navigator>
+			<view bindtap="takePhoto" class="take-photo">
+				<view></view>
+			</view>
+			<image wx:if="{{flash == 'on' || flash == 'auto'}}" bindtap="toggleFlash" class="flash" mode="widthFix" src="/pages/assets/icon/flash-open.png"></image>
+			<image wx:else bindtap="toggleFlash" class="flash" mode="widthFix" src="/pages/assets/icon/flash-close.png"></image>
+		</view>
+	</view>
+</view>

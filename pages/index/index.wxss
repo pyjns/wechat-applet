@@ -1,0 +1,77 @@
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-top: 100rpx;
+}
+
+.warn {
+  color: #f86e21;
+  font-size: 24rpx;
+}
+
+.swiper-wrap {
+  width: 100%;
+  padding-bottom: 28rpx;
+  overflow: hidden;
+}
+
+.user-list-wrap {
+  margin: 0 30rpx;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 10000rpx;
+}
+
+.user-wrap+.user-wrap {
+  margin-left: 12rpx;
+}
+
+.user-wrap {
+  margin-top: 100rpx;
+  height: 352rpx;
+  width: 690rpx;
+  background: yellowgreen;
+  box-shadow: 0px 5rpx 10rpx 0px rgba(51, 51, 51, 0.1);
+  border-radius: 12rpx;
+  padding: 28rpx 40rpx;
+  box-sizing: border-box;
+  font-size: 28rpx 40rpx 28rpx 28rpx;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+}
+
+.cell-list-wrap navigator {
+  height: 94rpx;
+  margin: 0 30rpx;
+  padding-right: 32rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cell-list-wrap navigator>view {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cell-list-wrap navigator>view image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.arrow::after {
+  right: 8rpx;
+}
+
+.space {
+  height: 20rpx;
+  background: #F6F2EF;
+}
